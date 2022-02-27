@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -7,19 +7,16 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  color: ${(props) => props.theme.textColor};
-  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
-const Emoji = styled.div`
-  font-size: 20px;
+const Emoji = styled.span`
+  color: ${(props) => props.bgColor};
 `;
 
 function App() {
   return (
     <Wrapper>
-      <Emoji>Hello</Emoji>
+      <Emoji bgColor={"orange"}>Hello</Emoji>
     </Wrapper>
   );
 }
