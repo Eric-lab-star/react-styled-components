@@ -16,7 +16,7 @@ const Emoji = styled.span`
 function App() {
   return (
     <Wrapper>
-      <Emoji bgColor={"orange"}>Hello</Emoji>
+      <Emoji bgColor={"red"}>Hello</Emoji>
     </Wrapper>
   );
 }
